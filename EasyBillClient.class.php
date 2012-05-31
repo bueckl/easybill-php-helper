@@ -35,7 +35,7 @@ interface EasyBillClient
     /**
      * @abstract
      * @param EasyBillDocument $document
-     * @return mixed
+     * @return EasyBillDocumentFile
      */
     public function createDocument($document);
 

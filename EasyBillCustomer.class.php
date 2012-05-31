@@ -21,4 +21,5 @@ class EasyBillCustomer
     public $country;
     public $taxOptions;
     public $cashAllowanceDays;
+    public $companyName;
 }
