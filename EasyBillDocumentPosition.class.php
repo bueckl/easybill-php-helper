@@ -2,8 +2,8 @@
 
 class EasyBillDocumentPosition
 {
-    const POSITION_TYPE_SERVICE = 'SERVICE';
-    const POSITION_TYPE_PRODUCT = 'PRODUCT';
+    const POSITION_TYPE_TEXT = 'TEXT';
+    const POSITION_TYPE_POSITION = 'POSITION';
 
     public $companyPositionID;
     public $positionType;

@@ -35,7 +35,7 @@ class EasyBill
     {
         $documentPosition = new EasyBillDocumentPosition();
         $documentPosition->companyPositionID = $companyPosition->positionID;
-        $documentPosition->positionType = $companyPosition->positionType;
+        $documentPosition->positionType = EasyBillDocumentPosition::POSITION_TYPE_POSITION;
         $documentPosition->itemNumber = $companyPosition->itemNumber;
         $documentPosition->itemDescription = $companyPosition->itemDescription;
         $documentPosition->count = $count;

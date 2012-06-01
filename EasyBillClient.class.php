@@ -3,6 +3,7 @@
 interface EasyBillClient
 {
     /**
+     * Add and update a customer
      * @abstract
      * @param EasyBillCustomer $customer
      * @return EasyBillCustomer
