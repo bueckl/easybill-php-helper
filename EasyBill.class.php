@@ -21,7 +21,7 @@ class EasyBill
             $client = new SoapClient("https://soap.easybill.de/soap.easybill.php?wsdl", array('trace' => 1, 'exceptions' => 1));
             $header = new SoapHeader('http://www.easybill.de/webservice', 'UserAuthKey', self::$apiKey);
             $client->__setSoapHeaders($header);
-            self::$client = $client;
+            self::$client = new EasyBillClient($client);
         }
         return self::$client;
     }

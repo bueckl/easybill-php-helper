@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * https://soap.easybill.de/wsdl/soap.customer.xsd
+ */
 class EasyBillCustomer
 {
 
@@ -23,4 +26,6 @@ class EasyBillCustomer
     public $cashAllowanceDays;
     public $companyName;
     public $email;
+    public $phone_1;
+    public $mobile;
 }
