@@ -18,10 +18,14 @@ class EasyBill
     public static function getClient()
     {
         if (is_null(self::$client)) {
-            $client = new SoapClient("https://soap.easybill.de/soap.easybill.php?wsdl", array('trace' => 1, 'exceptions' => 1));
-            $header = new SoapHeader('http://www.easybill.de/webservice', 'UserAuthKey', self::$apiKey);
-            $client->__setSoapHeaders($header);
-            self::$client = new EasyBillClient($client);
+            try {
+                $client = @new SoapClient("https://soap.easybill.de/soap.easybill.php?wsdl", array('trace' => 1, 'exceptions' => 1));
+                $header = @new SoapHeader('http://www.easybill.de/webservice', 'UserAuthKey', self::$apiKey);
+                $client->__setSoapHeaders($header);
+                self::$client = new EasyBillClient($client);
+            } catch (Exception $e) {
+                return null;
+            }
         }
         return self::$client;
     }
