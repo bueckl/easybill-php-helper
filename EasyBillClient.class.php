@@ -16,7 +16,11 @@ class EasyBillClient
     public function getCompanyPositionByPositionNumber($positionNumber)
     {
         $companyPosition = null;
-        $search = $this->searchCompanyPositions($positionNumber);
+        try {
+            $search = $this->searchCompanyPositions($positionNumber);
+        } catch (Exception $e) {
+            return null;
+        }
         if ($result = $search->SearchPosition) {
             if (!is_array($result)) $result = array($result);
             foreach ($result as $blob)
@@ -34,7 +38,11 @@ class EasyBillClient
      */
     public function setCustomer($customer)
     {
-        return $this->client->setCustomer($customer);
+        try {
+            return $this->client->setCustomer($customer);
+        } catch (Exception $e) {
+            return null;
+        }
     }
 
 
@@ -45,7 +53,11 @@ class EasyBillClient
      */
     public function getCompanyPosition($companyPositionID)
     {
-        return $this->client->getCompanyPosition($companyPositionID);
+        try {
+            return $this->client->getCompanyPosition($companyPositionID);
+        } catch (Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -55,17 +67,25 @@ class EasyBillClient
      */
     public function setCompanyPosition($position)
     {
-        return $this->client->setCompanyPosition($position);
+        try {
+            return $this->client->setCompanyPosition($position);
+        } catch (Exception $e) {
+            return null;
+        }
     }
 
     /**
      * @abstract
      * @param string $string
-     * @return EasyBillSearchCustomer
+     * @return EasyBillSearchCustomer|null
      */
     public function searchCustomers($string)
     {
-        return $this->client->searchCustomers($string);
+        try {
+            return $this->client->searchCustomers($string);
+        } catch (Exception $e) {
+            return null;
+        }
     }
 
 
@@ -76,7 +96,11 @@ class EasyBillClient
      */
     public function createDocument($document)
     {
-        return $this->client->createDocument($document);
+        try {
+            return $this->client->createDocument($document);
+        } catch (Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -86,7 +110,11 @@ class EasyBillClient
      */
     public function getDocument($documentID)
     {
-        return $this->client->getDocument($documentID);
+        try {
+            return $this->client->getDocument($documentID);
+        } catch (Exception $e) {
+            return null;
+        }
     }
 
 
@@ -97,7 +125,11 @@ class EasyBillClient
      */
     public function getCustomerByCustomerNumber($customerNumber)
     {
-        return $this->client->getCustomerByCustomerNumber($customerNumber);
+        try {
+            return $this->client->getCustomerByCustomerNumber($customerNumber);
+        } catch (Exception $e) {
+            return null;
+        }
     }
 
 
@@ -122,7 +154,11 @@ class EasyBillClient
      */
     public function getDocumentsByCustomer($customerID)
     {
-        return $this->client->getDocumentsByCustomer($customerID);
+        try {
+            return $this->client->getDocumentsByCustomer($customerID);
+        } catch (Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -132,14 +168,24 @@ class EasyBillClient
      */
     public function searchCompanyPositions($string)
     {
-        return $this->client->searchCompanyPositions($string);
+        try {
+            return $this->client->searchCompanyPositions($string);
+        } catch (Exception $e) {
+            return null;
+        }
     }
 
     /**
      * @param EasyBillDocumentPayment $payment
+     * @return bool
      */
     public function setDocumentAddPayment($payment)
     {
-        $this->client->setDocumentAddPayment($payment);
+        try {
+            $this->client->setDocumentAddPayment($payment);
+            return true;
+        } catch (Exception $e) {
+            return false;
+        }
     }
 }

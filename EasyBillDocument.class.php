@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * https://soap.easybill.de/wsdl/soap.document.xsd
+ */
 class EasyBillDocument
 {
     public $customerID;

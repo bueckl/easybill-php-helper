@@ -28,4 +28,12 @@ class EasyBillCustomer
     public $email;
     public $phone_1;
     public $mobile;
+
+
+    public $bankAccountOwner_1;
+    public $bankName_1;
+    public $bankCode_1;
+    public $bankAccount_1;
+    public $bankBIC_1;
+    public $bankIBAN_1;
 }
