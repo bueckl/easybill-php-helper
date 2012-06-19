@@ -8,7 +8,7 @@
  */
 class EasyBill
 {
-    private static $apiKey = '...';
+    public static $apiKey = '';
     private static $client = null;
 
     /**
