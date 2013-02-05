@@ -2,6 +2,7 @@
     "name": "romopat/easybill-php-helper",
     "description": "Helps to use the EasyBill API",
     "keywords": ["EasyBill", "API"],
+    "license": "MIT",
     "type": "library",
     "authors": [
         {
