@@ -1,0 +1,19 @@
+{
+    "name": "ROMOPAT/easybill-php-helper",
+    "description": "Helps to use the EasyBill API",
+    "keywords": ["EasyBill", "API"],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Patrick Romowicz",
+            "email": "patrick@romowicz.de"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.0",
+        "ext-soap": "*"
+    },
+    "autoload": {
+        "classmap": ["src"]
+    }
+}

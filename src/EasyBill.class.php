@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__ . '/EasyBillClient.class.php';
+
 /**
  * https://soap.easybill.de/soap.easybill.php?wsdl
  * https://soap.easybill.de/wsdl/soap.customer.xsd
@@ -8,19 +10,19 @@
  */
 class EasyBill
 {
-    public static $apiKey = '';
     private static $client = null;
 
     /**
-     * @static
-     * @return EasyBillClient
+     * @param $apiKey
+     * @return EasyBillClient|null
      */
-    public static function getClient()
+    public static function getClient($apiKey)
     {
         if (is_null(self::$client)) {
             try {
+                ini_set('soap.wsdl_cache_enabled', '0');
                 $client = @new SoapClient("https://soap.easybill.de/soap.easybill.php?wsdl", array('trace' => 1, 'exceptions' => 1));
-                $header = @new SoapHeader('http://www.easybill.de/webservice', 'UserAuthKey', self::$apiKey);
+                $header = @new SoapHeader('http://www.easybill.de/webservice', 'UserAuthKey', $apiKey);
                 $client->__setSoapHeaders($header);
                 self::$client = new EasyBillClient($client);
             } catch (Exception $e) {
