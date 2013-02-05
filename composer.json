@@ -1,5 +1,5 @@
 {
-    "name": "ROMOPAT/easybill-php-helper",
+    "name": "romopat/easybill-php-helper",
     "description": "Helps to use the EasyBill API",
     "keywords": ["EasyBill", "API"],
     "type": "library",
