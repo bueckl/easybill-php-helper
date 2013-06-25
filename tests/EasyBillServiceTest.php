@@ -5,7 +5,7 @@ class EasyBillServiceTest extends PHPUnit_Framework_TestCase
 
     private function getApiKey()
     {
-        return 'tmu12q6a48s2fmaxuu51wlh5bmui97zsjkkb0hcvfunk6o8r93ivfpqg2bo18eji';
+        return '<API-KEY>';
     }
 
     /**
