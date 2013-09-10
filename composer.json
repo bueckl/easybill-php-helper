@@ -1,10 +1,10 @@
 {
-    "name": "romopat/easybill-php-helper",
+    "name": "patromo/easybill-php-helper",
     "description": "Helps to use the EasyBill API",
     "keywords": ["EasyBill", "API"],
     "license": "MIT",
     "type": "library",
-    "homepage": "https://github.com/romopat/easybill-php-helper",
+    "homepage": "https://github.com/PATROMO/easybill-php-helper",
     "version": "1.0.0",
     "authors": [
         {
