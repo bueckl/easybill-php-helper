@@ -25,7 +25,8 @@ class EasyBillDocumentPosition extends ValueObj
 
     /**
      * @param EasyBillCompanyPosition $companyPosition
-     * @param int $count
+     * @param int                     $count
+     *
      * @return EasyBillDocumentPosition
      */
     public static function createFromCompanyPosition(EasyBillCompanyPosition $companyPosition, $count = 1)

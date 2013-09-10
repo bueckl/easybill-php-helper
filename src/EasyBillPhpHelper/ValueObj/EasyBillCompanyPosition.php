@@ -6,7 +6,7 @@ namespace EasyBillPhpHelper\ValueObj;
  * Class EasyBillCompanyPosition
  *
  * @package EasyBillPhpHelper\ValueObj
- * @link https://soap.easybill.de/wsdl/soap.companyposition.xsd
+ * @link    https://soap.easybill.de/wsdl/soap.companyposition.xsd
  *
  * @property string positionID
  * @property string positionType

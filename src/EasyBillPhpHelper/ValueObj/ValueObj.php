@@ -1,6 +1,7 @@
 <?php
 
 namespace EasyBillPhpHelper\ValueObj;
+
 use ___PHPSTORM_HELPERS\object;
 
 /**
@@ -21,6 +22,7 @@ abstract class ValueObj
 
     /**
      * @param \stdClass[] $data
+     *
      * @return ValueObj[]
      */
     public static function createFromArray(array $data)

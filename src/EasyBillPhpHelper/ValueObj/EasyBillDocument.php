@@ -6,7 +6,7 @@ namespace EasyBillPhpHelper\ValueObj;
  * Class EasyBillDocument
  *
  * @package EasyBillPhpHelper\ValueObj
- * @link https://soap.easybill.de/wsdl/soap.document.xsd
+ * @link    https://soap.easybill.de/wsdl/soap.document.xsd
  *
  * @property mixed customerID
  * @property mixed currency

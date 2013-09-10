@@ -12,7 +12,7 @@ use EasyBillPhpHelper\ValueObj\EasyBillDocumentPayment;
  * Class EasyBillService
  *
  * @package EasyBillPhpHelper
- * @link https://soap.easybill.de/soap.easybill.php?wsdl
+ * @link    https://soap.easybill.de/soap.easybill.php?wsdl
  */
 class EasyBillService
 {
@@ -45,6 +45,7 @@ class EasyBillService
 
     /**
      * @param $string
+     *
      * @return EasyBillCustomer[]
      * @throws \SoapFault if fail
      */
@@ -59,6 +60,7 @@ class EasyBillService
 
     /**
      * @param $string
+     *
      * @return EasyBillCompanyPosition[]
      * @throws \SoapFault if fail
      */
@@ -82,6 +84,7 @@ class EasyBillService
 
     /**
      * @param EasyBillCompanyPosition $position
+     *
      * @return EasyBillCompanyPosition
      * @throws \SoapFault if fail
      */
@@ -92,6 +95,7 @@ class EasyBillService
 
     /**
      * @param EasyBillCompanyPosition $position
+     *
      * @return EasyBillCompanyPosition
      * @throws \SoapFault if fail
      */
@@ -102,6 +106,7 @@ class EasyBillService
 
     /**
      * @param $positionID
+     *
      * @return EasyBillCompanyPosition
      * @throws \SoapFault if not found
      */
@@ -112,6 +117,7 @@ class EasyBillService
 
     /**
      * @param EasyBillCustomer $customer
+     *
      * @return EasyBillCustomer
      * @throws \SoapFault if not found
      */
@@ -122,6 +128,7 @@ class EasyBillService
 
     /**
      * @param EasyBillCustomer $customer
+     *
      * @return EasyBillCustomer
      * @throws \SoapFault if not found
      */
@@ -132,6 +139,7 @@ class EasyBillService
 
     /**
      * @param $customerID
+     *
      * @return EasyBillCustomer
      * @throws \SoapFault if not found
      */
@@ -142,6 +150,7 @@ class EasyBillService
 
     /**
      * @param $customerNumber
+     *
      * @return EasyBillCustomer
      * @throws \SoapFault if not found
      */
@@ -153,6 +162,7 @@ class EasyBillService
 
     /**
      * @param EasyBillDocument $document
+     *
      * @return EasyBillDocumentFile
      * @throws \SoapFault if not found
      */
@@ -163,6 +173,7 @@ class EasyBillService
 
     /**
      * @param $documentID
+     *
      * @return EasyBillDocumentFile
      * @throws \SoapFault if not found
      */
@@ -173,6 +184,7 @@ class EasyBillService
 
     /**
      * @param EasyBillDocumentPayment $payment
+     *
      * @return bool
      * @throws \SoapFault if not found
      */

@@ -6,12 +6,12 @@ namespace EasyBillPhpHelper\ValueObj;
  * Class EasyBillDocumentFile
  * @package EasyBillPhpHelper\ValueObj
  *
- * @property mixed fileName
- * @property mixed file
+ * @property mixed            fileName
+ * @property mixed            file
  * @property EasyBillDocument document
- * @property mixed signDocument
- * @property mixed sentasemail
- * @property mixed sentaspost
+ * @property mixed            signDocument
+ * @property mixed            sentasemail
+ * @property mixed            sentaspost
  */
 class EasyBillDocumentFile extends ValueObj
 {
