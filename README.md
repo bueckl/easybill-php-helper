@@ -3,10 +3,6 @@ easybill-php-helper
 
 Helps to use the EasyBill API
 ```php
-<?php
-
-
-
 // Use EasyBillPhpHelper namespace.
 use \EasyBillPhpHelper;
 
