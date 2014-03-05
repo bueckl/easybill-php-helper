@@ -8,7 +8,7 @@ namespace EasyBillPhpHelper\ValueObj;
  * @package EasyBillPhpHelper\ValueObj
  * @link    https://soap.easybill.de/wsdl/soap.customer.xsd
  *
- * @property string customerID
+ * @property string $customerID
  * @property string $customerNumber
  * @property string $salutation
  * @property string $firstName
